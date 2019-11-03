@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kakao-Clone</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
       </div>
     </div>
 
-    <hearder class="header">
+    <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Chats</h1>
       </div>
@@ -34,46 +35,58 @@
         <span class="header__icon"><i class="far fa-comment"></i></span>
         <span class="header__icon"><i class="fas fa-cog"></i></span>
       </div>
-    </hearder>
+    </header>
 
     <main class="chats">
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avater g-avatar" src="images/profilepic.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">Lynn</span>
-                <span class="chat__preview">Going home!</span>
+            <div class="chats__chat friends_friend friend">
+              <div class="friend__column">
+                <img
+                  src="images/profilepic.jpg"
+                  class="m-avatar friend__avatar friend--lg"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">Lynn</span>
+                  <span class="friend__bottom-text">
+                    going home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <div class="frined__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
       </ul>
     </main>
 
-    <nav class="nevigation">
+    <nav class="navigation">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav_list-link">
+          <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav_list-link">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="find.html" class="nav_list-link">
+          <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="more.html" class="nav_list-link">
+          <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>

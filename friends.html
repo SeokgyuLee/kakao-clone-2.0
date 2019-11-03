@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao-Clone</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
       </div>
     </div>
 
-    <hearder class="header">
+    <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Friends</h1>
       </div>
@@ -33,11 +34,11 @@
         <span class="header__icon"><i class="fas fa-search"></i></span>
         <span class="header__icon"><i class="fas fa-cog"></i></span>
       </div>
-    </hearder>
+    </header>
 
     <main class="friends">
       <header class="friends__header">
-        <div class="friends_friend friend friend--lg">
+        <div class="friends_friend friend">
           <div class="friend__column">
             <img src="images/profilepic.jpg" class="g-avatar friend__avatar " />
             <div class="friend__content">
@@ -51,19 +52,14 @@
       </header>
       <div class="friends__plus">
         <h5 class="friends__plus-title">Plus friend</h5>
-        <header class="friends__header">
-          <div class="friends_friend friend">
-            <div class="friend__column">
-              <img
-                src="images/profilepic.jpg"
-                class="g-avatar friend__avatar friend"
-              />
-              <div class="friend__content">
-                <span class="friend__name">Plus friend</span>
-              </div>
+        <div class="friends_friend friend">
+          <div class="friend__column">
+            <img src="images/profilepic.jpg" class="friend__avatar friend" />
+            <div class="friend__content">
+              <span class="friend__name">Plus friend</span>
             </div>
           </div>
-        </header>
+        </div>
       </div>
       <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
@@ -71,7 +67,7 @@
           <div class="friend__column">
             <img
               src="images/profilepic.jpg"
-              class="g-avatar friend__avatar friend--lg"
+              class=" friend__avatar friend--lg"
             />
             <div class="friend__content">
               <span class="friend__name">이석규</span>
@@ -81,8 +77,8 @@
             </div>
           </div>
           <div class="frined__column">
-            <div class="frined__now-listening">
-              <span>천둥벌거숭이 - Zico</span>
+            <div class="friend__now-listening">
+              <span>천둥벌거숭이 - Zico </span>
               <i class="fas fa-play"></i>
             </div>
           </div>
@@ -90,25 +86,26 @@
       </ul>
     </main>
 
-    <nav class="nevigation">
+    <nav class="navigation">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav_list-link">
+          <a href="friends.html" class="nav__list-link">
             <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav_list-link">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="find.html" class="nav_list-link">
+          <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="more.html" class="nav_list-link">
+          <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
